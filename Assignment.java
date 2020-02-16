@@ -5,13 +5,14 @@ public class Assignment {
 
        ages();     
        names();   
-        
+       System.out.println(concatString("Ciao!", 12));
+              
     }
 
-    // Part 1:	Create an array of int called ages that contains the 
-    // following values: 3, 9, 23, 64, 2, 8, 28, 93.
-
     public static void ages() {
+
+        // Part 1:	Create an array of int called ages that contains the 
+        // following values: 3, 9, 23, 64, 2, 8, 28, 93.
 
         int[] ages = new int[]{3, 9, 23, 64, 2, 8, 28, 93, 41};
     
@@ -43,10 +44,10 @@ public class Assignment {
 
     }
 
-    // Part 2: Create an array of String called names that contains the following values: 
-    // “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”.
-    
     public static void names() {
+        
+        // Part 2: Create an array of String called names that contains the following values: 
+        // “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”.
 
         String[] names = new String[]{"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
 
@@ -101,4 +102,22 @@ public class Assignment {
         System.out.println(sumLengths);        
         
     }
+
+    public static String concatString(String word, int n) {
+
+        // Part 7: Write a method that takes a String, word, and an int, n, as 
+        // arguments and returns the word concatenated to itself n number of 
+        // times. (i.e. if I pass in “Hello” and 3, I would expect the method to 
+        // return “HelloHelloHello”).
+
+        String concatedString = "";
+
+        for (int i = 0; i < n; i++) {
+            concatedString += word;
+        }
+
+        return concatedString;
+    }
+
+
 }
