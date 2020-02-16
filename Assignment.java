@@ -8,10 +8,10 @@ public class Assignment {
         
     }
 
-    public static void ages() {
+    // Part 1:	Create an array of int called ages that contains the 
+    // following values: 3, 9, 23, 64, 2, 8, 28, 93.
 
-         // Part 1:	Create an array of int called ages that contains the 
-        // following values: 3, 9, 23, 64, 2, 8, 28, 93.
+    public static void ages() {
 
         int[] ages = new int[]{3, 9, 23, 64, 2, 8, 28, 93, 41};
     
@@ -42,11 +42,11 @@ public class Assignment {
         System.out.println(ageSum / ages.length);  
 
     }
+
+    // Part 2: Create an array of String called names that contains the following values: 
+    // “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”.
     
     public static void names() {
-
-        // Part 2: Create an array of String called names that contains the following values: 
-        // “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”.
 
         String[] names = new String[]{"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
 
@@ -66,14 +66,30 @@ public class Assignment {
 
         String allNames = "";
 
-        for (String name: names) {
+        for (String name : names) {
             allNames = allNames.concat(name).concat(" ");
         }
 
         System.out.println("All names: " + allNames);
         
+        
+        // Part 3: How do you access the last element of an array? 
+        // --->>> Use array[array.length - 1]
+        
+        // Part 4: How do you access the first element of an array?
+        // --->>> Use array[0]
+        
+        // Part 5: Create a new array of int called nameLengths. Write a loop to 
+        // iterate over the previously created names array and add the length of each 
+        // name to the nameLengths array.
+
+        int[] nameLengths = new int[names.length];
+
+        for (int i = 0; i < names.length; i++) {
+            nameLengths[i] = names[i].length();
+        }
+
+        
+        
     }
-
-
-
 }
