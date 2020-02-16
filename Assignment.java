@@ -9,8 +9,9 @@ public class Assignment {
     //    System.out.println(getFullName("Dave", "Irwin"));
     //    System.out.println(isGreaterThan100(new int[]{101}));
     //    System.out.println(getAverage(new double[]{3.14, 45.23, 65.9, 12.01}));
+    //    System.out.println(averageIsGreater(new double[]{1.23, 2.34, 3.456, 23.7}, new double[]{5.73, 2.317, 11.5}));
 
-    System.out.println(averageIsGreater(new double[]{1.23, 2.34, 3.456, 23.7}, new double[]{5.73, 2.317, 11.5}));
+    System.out.println(willBuyDrink(false, 12));
               
     }
 
@@ -190,7 +191,15 @@ public class Assignment {
 
     }
 
+    // Part 12
+    public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
+        
+        // Write a method called willBuyDrink that takes a boolean isHotOutside, 
+        // and a double moneyInPocket, and returns true if it is hot outside and 
+        // if moneyInPocket is greater than 10.50.
 
+        return isHotOutside && moneyInPocket > 10.50;
+    }
 
 
 }
