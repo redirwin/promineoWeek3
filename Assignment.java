@@ -4,16 +4,15 @@ public class Assignment {
 
     public static void main(String[] args) {
 
-    //    ages();     
-    //    names();   
-    //    System.out.println(concatString("Ciao!", 12));
-    //    System.out.println(getFullName("Dave", "Irwin"));
-    //    System.out.println(isGreaterThan100(new int[]{101}));
-    //    System.out.println(getAverage(new double[]{3.14, 45.23, 65.9, 12.01}));
-    //    System.out.println(averageIsGreater(new double[]{1.23, 2.34, 3.456, 23.7}, new double[]{5.73, 2.317, 11.5}));
-    //    System.out.println(willBuyDrink(false, 12));
-
-    bringInBarney();
+       ages();     
+       names();   
+       System.out.println(concatString("Ciao!", 12));
+       System.out.println(getFullName("Dave", "Irwin"));
+       System.out.println(isGreaterThan100(new int[]{101}));
+       System.out.println(getAverage(new double[]{3.14, 45.23, 65.9, 12.01}));
+       System.out.println(averageIsGreater(new double[]{1.23, 2.34, 3.456, 23.7}, new double[]{5.73, 2.317, 11.5}));
+       System.out.println(willBuyDrink(false, 12));
+       bringInBarney();
               
     }
 
