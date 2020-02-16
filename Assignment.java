@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Assignment {
 
@@ -10,8 +11,9 @@ public class Assignment {
     //    System.out.println(isGreaterThan100(new int[]{101}));
     //    System.out.println(getAverage(new double[]{3.14, 45.23, 65.9, 12.01}));
     //    System.out.println(averageIsGreater(new double[]{1.23, 2.34, 3.456, 23.7}, new double[]{5.73, 2.317, 11.5}));
+    //    System.out.println(willBuyDrink(false, 12));
 
-    System.out.println(willBuyDrink(false, 12));
+    bringInBarney();
               
     }
 
@@ -201,5 +203,31 @@ public class Assignment {
         return isHotOutside && moneyInPocket > 10.50;
     }
 
+    // Part 13
+    // Create a method of your own that solves a problem.
+
+    public static void bringInBarney() {
+
+        // Barney is a sulcata toroise and needs to stay warm at night during the winter. 
+        // Usually, she stays outside in her enclosure and sleeps in her burrow. However,
+        // she must come inside at night if the temperature will drop below 45 degrees or
+        // if she has not entered her burrow before dark. This method will help my kids
+        // decide if Barney needs to come inside at night.
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Is Barney in her burrow? yes/no: ");
+        String inBurrow = sc.nextLine();
+
+        System.out.print("What will be the low temp tonight? ");
+        double temperature = sc.nextDouble();
+
+        if (temperature < 45 || inBurrow.equals("no")) {
+            System.out.println("Bring Barney inside!");
+        } else {
+            System.out.println("Barney can stay outside.");
+        }
+
+    }
 
 }
