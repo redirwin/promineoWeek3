@@ -89,7 +89,16 @@ public class Assignment {
             nameLengths[i] = names[i].length();
         }
 
-        
+        // Part 6: Write a loop to iterate over the nameLengths array and calculate
+        // the sum of all the elements in the array. Print the result to the console.
+
+        int sumLengths = 0;
+
+        for (int length : nameLengths) {
+            sumLengths += length;
+        }
+
+        System.out.println(sumLengths);        
         
     }
 }
