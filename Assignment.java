@@ -8,7 +8,9 @@ public class Assignment {
     //    System.out.println(concatString("Ciao!", 12));
     //    System.out.println(getFullName("Dave", "Irwin"));
     //    System.out.println(isGreaterThan100(new int[]{101}));
-       System.out.println(getAverage(new double[]{3.14, 45.23, 65.9, 12.01}));
+    //    System.out.println(getAverage(new double[]{3.14, 45.23, 65.9, 12.01}));
+
+    System.out.println(averageIsGreater(new double[]{1.23, 2.34, 3.456, 23.7}, new double[]{5.73, 2.317, 11.5}));
               
     }
 
@@ -165,4 +167,30 @@ public class Assignment {
 
         return sum / numbers.length;
     }
+
+    // Part 11
+    public static boolean averageIsGreater(double[] arr1, double[] arr2) {
+
+        // Write a method that takes two arrays of double and returns true 
+        // if the average of the elements in the first array is greater than 
+        // the average of the elements in the second array.
+
+        double arr1Total = 0;
+        double arr2Total = 0;
+
+        for (double number : arr1) {
+            arr1Total += number;
+        }
+
+        for (double number : arr2) {
+            arr2Total += number;
+        }
+
+        return (arr1Total / arr1.length) > (arr2Total / arr2.length);
+
+    }
+
+
+
+
 }
