@@ -3,12 +3,14 @@ public class Assignment {
 
     public static void main(String[] args) {
 
-       ages();     
-       names();   
-       System.out.println(concatString("Ciao!", 12));
+    //    ages();     
+    //    names();   
+    //    System.out.println(concatString("Ciao!", 12));
+       System.out.println(getFullName("Dave", "Irwin"));
               
     }
 
+    // Part 1
     public static void ages() {
 
         // Part 1:	Create an array of int called ages that contains the 
@@ -44,6 +46,7 @@ public class Assignment {
 
     }
 
+    // Parts 2 - 6
     public static void names() {
         
         // Part 2: Create an array of String called names that contains the following values: 
@@ -103,6 +106,7 @@ public class Assignment {
         
     }
 
+    // Part 7
     public static String concatString(String word, int n) {
 
         // Part 7: Write a method that takes a String, word, and an int, n, as 
@@ -119,5 +123,14 @@ public class Assignment {
         return concatedString;
     }
 
+    // Part 8
+    public static String getFullName(String firstName, String lastName) {
+
+        // Write a method that takes two Strings, firstName and lastName, 
+        // and returns a full name (the full name should be the first and 
+        // the last name as a String separated by a space).
+
+        return firstName + (" ") + (lastName);
+    }
 
 }
