@@ -7,7 +7,8 @@ public class Assignment {
     //    names();   
     //    System.out.println(concatString("Ciao!", 12));
     //    System.out.println(getFullName("Dave", "Irwin"));
-    System.out.println(isGreaterThan100(new int[]{101}));
+    //    System.out.println(isGreaterThan100(new int[]{101}));
+       System.out.println(getAverage(new double[]{3.14, 45.23, 65.9, 12.01}));
               
     }
 
@@ -150,4 +151,18 @@ public class Assignment {
 
     }
 
+    // Part 10
+    public static double getAverage(double[] numbers) {
+        
+        // Write a method that takes an array of double and returns the average 
+        // of all the elements in the array.
+
+        double sum = 0;
+
+        for (double number : numbers) {
+            sum += number;
+        }
+
+        return sum / numbers.length;
+    }
 }
