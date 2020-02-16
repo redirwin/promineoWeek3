@@ -6,14 +6,15 @@ public class Assignment {
     //    ages();     
     //    names();   
     //    System.out.println(concatString("Ciao!", 12));
-       System.out.println(getFullName("Dave", "Irwin"));
+    //    System.out.println(getFullName("Dave", "Irwin"));
+    System.out.println(isGreaterThan100(new int[]{101}));
               
     }
 
     // Part 1
     public static void ages() {
 
-        // Part 1:	Create an array of int called ages that contains the 
+        // Create an array of int called ages that contains the 
         // following values: 3, 9, 23, 64, 2, 8, 28, 93.
 
         int[] ages = new int[]{3, 9, 23, 64, 2, 8, 28, 93, 41};
@@ -49,7 +50,7 @@ public class Assignment {
     // Parts 2 - 6
     public static void names() {
         
-        // Part 2: Create an array of String called names that contains the following values: 
+        // Create an array of String called names that contains the following values: 
         // “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”.
 
         String[] names = new String[]{"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
@@ -109,7 +110,7 @@ public class Assignment {
     // Part 7
     public static String concatString(String word, int n) {
 
-        // Part 7: Write a method that takes a String, word, and an int, n, as 
+        // Write a method that takes a String, word, and an int, n, as 
         // arguments and returns the word concatenated to itself n number of 
         // times. (i.e. if I pass in “Hello” and 3, I would expect the method to 
         // return “HelloHelloHello”).
@@ -131,6 +132,22 @@ public class Assignment {
         // the last name as a String separated by a space).
 
         return firstName + (" ") + (lastName);
+    }
+
+    // Part 9
+    public static boolean isGreaterThan100(int[] numbers) {
+
+        // Write a method that takes an array of int and returns true if the sum 
+        // of all the ints in the array is greater than 100.
+
+        int total = 0;
+
+        for (int number : numbers) {
+            total += number;
+        }
+
+        return total > 100;
+
     }
 
 }
